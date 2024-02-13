@@ -13,7 +13,7 @@ fi
 if ! hash ansible >/dev/null 2>&1; then
     echo "Installing Ansible..."
     apt-get update
-    apt-get install software-properties-common ansible git python-apt -y
+    apt-get install software-properties-common ansible git python3-apt -y
 else
     echo "Ansible already installed"
 fi
